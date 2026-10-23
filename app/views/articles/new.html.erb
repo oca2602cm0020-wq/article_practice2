@@ -1,0 +1,16 @@
+<h1>新規投稿</h1>
+<%= form_with model: @article do |f| %>
+  <div>
+    <%= f.label :title, "タイトル" %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :content, "投稿内容" %>
+    <%= f.text_area :content %>
+  </div>
+
+  <div>
+    <%= f.submit "投稿" %>
+  </div>
+<% end %>
