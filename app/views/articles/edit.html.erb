@@ -1,0 +1,17 @@
+<h1>投稿編集<h1>
+
+<%= form_with(model: @article, local: true) do |f| %>
+    <div>
+      <%= f.label :title, "タイトル" %>
+      <%= f.text_field :title %>
+    </div>
+
+    <div>
+      <%= f.label :content, "投稿内容" %>
+      <%= f.text_area :content %>
+    </div>
+
+    <div>
+      <%= f.submit "更新" %>
+    </div>
+<% end %>

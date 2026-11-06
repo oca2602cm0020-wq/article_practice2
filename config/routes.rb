@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # トップページ
+  root "homes#top"
   resources :articles
 
   #root to: 'articles#index'
